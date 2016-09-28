@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Ingreso UTN FRA</title>
+
+		<!--Estilos-->
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<!--final de Estilos-->
+
+
+		<!--AngularJS-->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!--AngularJS-->
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="jsFerreteConstruccion.js"></script>
+        <!--Final de Lógica-Programación -->
+		
+
+	</head>
+
+	<body ng-app="FerreteConstruccion" ng-controller="controlConstruccion">>
+		<div class="CajaUno animated bounceInDown">
+			
+		
+			<form id="FormIngreso">
+
+				<input type="text"  placeholder="Largo del terreno" ng-model="vLargo" id="Largo">
+				<input type="text"  placeholder="Ancho del terreno" ng-model="vAncho" id="Ancho">
+				<input type="text"  placeholder="Radio del terreno" ng-model="vRadio" id="Radio">
+				<input type="text"  placeholder="Alto del terreno" ng-model="vAlto" id="Alto">
+				<br>
+				
+			</form>
+			
+		</div>
+		<div class="CajaUno animated bounceInLeft">
+			
+			
+			<button  class="MiBotonUTN" ng-click="Rectangulo(vLargo,vAncho,vRadio,vAlto)" >A- Perimetro</button>
+			<button  class="MiBotonUTN" ng-click="Circulo(vLargo,vAncho,vRadio,vAlto)" >B- 3 Vueltas</button>
+			
+
+		</div>
+
+		<div class="CajaEnunciado animated bounceInLeft">
+			
+		</div>
+
+		<div class="CajaAbajo animated bounceInUp">
+			<a  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+		</div>
+	</body>
+</html>

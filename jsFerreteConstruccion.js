@@ -10,8 +10,8 @@ app.controller("controlConstruccion",function($scope){
        	alert(parseInt(dato1) + parseInt(dato2) + parseInt(dato3) + parseInt(dato4));
 	};
 
-	$scope.Circulo=function(dato3){
-       	alert((2*3.14 * parseInt(dato3)) *3 );
+	$scope.Circulo=function(dato1, dato2, dato3, dato4){
+       	alert(parseInt(dato1) * 3 + parseInt(dato2) * 3 + parseInt(dato3) * 3 + parseInt(dato4) * 3);
 	};	
 
 
